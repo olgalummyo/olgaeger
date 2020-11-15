@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Hr, Icon, Box, Button, Input } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Button, Image, Hr, Icon, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, StackItem, Stack, Formspree } from "@quarkly/components";
+import { Override, Menu, Section, StackItem, Stack, Formspree } from "@quarkly/components";
 import { MdArrowDownward, MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 export default (() => {
@@ -14,6 +14,84 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
+		<Section>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="center"
+				flex-direction="row"
+				md-flex-direction="column"
+			>
+				<Text margin="0" md-margin="0px 0 20px 0" text-align="left" font="--lead">
+					Awesome Company
+				</Text>
+				<Menu
+					display="flex"
+					justify-content="center"
+					font="--base"
+					font-weight="700"
+					md-flex-direction="column"
+					md-align-items="center"
+				>
+					<Override slot="link" text-decoration="none" color="--dark" padding="6px 12px" />
+					<Override slot="link-active" color="--primary" />
+					<Override slot="item" padding="6px" />
+				</Menu>
+			</Box>
+		</Section>
+		<Section
+			text-align="center"
+			background-color="--primary"
+			color="--light"
+			padding="100px 0"
+			sm-padding="40px 0"
+		>
+			<Text
+				as="h5"
+				font="--lead"
+				margin="10px 0 0 0"
+				text-transform="uppercase"
+				letter-spacing="5px"
+			>
+				Second to none
+			</Text>
+			<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
+				About Us
+			</Text>
+			<Text as="p" font="--lead" margin="40px 0 20px 0">
+				Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake. I’m a great space for you to tell a story and let your site visitors know more about you. Talk about your business and what products and services you offer. Share how you came up with the idea for your company and what makes you different from your competitors. Make your business stand out and show your visitors who you are.
+			</Text>
+			<Button>
+				Button
+			</Button>
+			<Link href="#">
+				Some text
+			</Link>
+		</Section>
+		<Section
+			text-align="center"
+			background-color="--primary"
+			color="--light"
+			padding="100px 0"
+			sm-padding="40px 0"
+		>
+			<Text
+				as="h5"
+				font="--lead"
+				margin="10px 0 0 0"
+				text-transform="uppercase"
+				letter-spacing="5px"
+			>
+				Second to none
+			</Text>
+			<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
+				About Us
+			</Text>
+			<Text as="p" font="--lead" margin="40px 0 20px 0">
+				Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake. I’m a great space for you to tell a story and let your site visitors know more about you. Talk about your business and what products and services you offer. Share how you came up with the idea for your company and what makes you different from your competitors. Make your business stand out and show your visitors who you are.
+			</Text>
+		</Section>
 		<Section
 			padding="60px 0"
 			sm-padding="40px 0"
